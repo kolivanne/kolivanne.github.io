@@ -1,0 +1,50 @@
+/* dancing-script-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dancing-script-v24-latin/dancing-script-v24-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/dancing-script-v24-latin/dancing-script-v24-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/dancing-script-v24-latin/dancing-script-v24-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/dancing-script-v24-latin/dancing-script-v24-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/dancing-script-v24-latin/dancing-script-v24-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/dancing-script-v24-latin/dancing-script-v24-latin-regular.svg#DancingScript') format('svg'); /* Legacy iOS */
+  }
+  body
+  {
+    height: 100vh;
+  }
+  #btn-back-to-top 
+  {
+    position: fixed;
+    border-radius: 30px;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+  }
+  .my-button
+  {
+    border-radius: 30px;
+  }
+  .my-font
+  {
+    font-family: "Dancing Script", sans-serif;
+  }
+  .sunglasses
+  {
+    display: none;
+  }
+  
+  .my-headline::after
+  {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin: 10px auto;
+    background-color: #6ea8fe;
+  }
+  
+  
