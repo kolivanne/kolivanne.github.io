@@ -1,18 +1,6 @@
 const darkModeStorage = "darkMode";
 let toggleDarkButton = document.getElementById("skinToggler");
 
-/**
- *  Create darkmode in localStorage if needed. 
- * True is default
- */
-function initDarkMode()
-{
-  if(localStorage.getItem(darkModeStorage) === null)
-  {
-    localStorage.setItem(darkModeStorage, "true");
-  }
-}
-
 /** Set dark mode value in localStorage*/
 function manageLocalStorageDarkMode()
 {
@@ -36,17 +24,18 @@ function setTheme()
     const lightMode = "light";
     const darkMode = "dark";
     const dataAttr = "data-bs-theme";
+    const hrefAttr = "href";
 
 
     if(localStorage.getItem(darkModeStorage) === "true")
     {
         document.documentElement.setAttribute(dataAttr, darkMode);
-        myStyleSheet.setAttribute("href", darkSytle);
+        myStyleSheet.setAttribute(hrefAttr, darkSytle);
     }
     else
     {
         document.documentElement.setAttribute(dataAttr, lightMode);
-        myStyleSheet.setAttribute("href", lightStyle);
+        myStyleSheet.setAttribute(hrefAttr, lightStyle);
     }
 }
 
@@ -55,6 +44,19 @@ function updateDarkmode()
 {
     manageLocalStorageDarkMode();
     setTheme();
+}
+
+/**
+ *  Create darkmode in localStorage if needed. 
+ * True is default
+ */
+function initDarkMode()
+{
+  if(localStorage.getItem(darkModeStorage) === null)
+  {
+    localStorage.setItem(darkModeStorage, "true");
+  }
+  setTheme();
 }
 
 initDarkMode();
