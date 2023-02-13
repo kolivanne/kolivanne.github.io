@@ -1,8 +1,6 @@
 const darkModeStorage = "darkMode";
 let toggleDarkButton = document.getElementById("skinToggler");
 
-
-initDarkMode();
 /**
  *  Create darkmode in localStorage if needed. 
  * True is default
@@ -15,8 +13,6 @@ function initDarkMode()
   }
 }
 
-toggleDarkButton.addEventListener("click", updateDarkmode);
-
 /** Set dark mode value in localStorage*/
 function manageLocalStorageDarkMode()
 {
@@ -28,12 +24,6 @@ function manageLocalStorageDarkMode()
     {
         localStorage.setItem(darkModeStorage, "true");
     }
-}
-/** Dark mode button event*/
-function updateDarkmode()
-{
-    manageLocalStorageDarkMode();
-    setTheme();
 }
 
 /** Load css file and sets theme*/
@@ -59,3 +49,13 @@ function setTheme()
         myStyleSheet.setAttribute("href", lightStyle);
     }
 }
+
+/** Dark mode button event*/
+function updateDarkmode()
+{
+    manageLocalStorageDarkMode();
+    setTheme();
+}
+
+initDarkMode();
+toggleDarkButton.addEventListener("click", updateDarkmode);
