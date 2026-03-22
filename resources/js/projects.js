@@ -1,4 +1,21 @@
 const projects = [
+ {
+  "title": "OpsFlow: Atlassian Lifecycle & Governance Demo",
+  "subtitle": "(Python, GitHub Actions)",
+  "description": "A modular framework for managing and automating Jira and Confluence lifecycle processes, including knowledge base cleanup, ticket governance, and AI policy enforcement.",
+  "github": "https://github.com/kolivanne/atlas-ops-demo",
+  "badges": [
+    { "text": "Python", "color": "dark" },
+    { "text": "GitHub Actions", "color": "dark" },
+    { "text": "Core Challenge", "color": "secondary", "note": "Focus: safe lifecycle automation across multiple Atlassian products" },
+    { "text": "Design Decision", "color": "secondary", "note": "Separation of concerns and extensible architecture for future tools" }
+  ],
+  "notes": [
+    "Automated identification and archiving of stale Confluence pages",
+    "Cross-project Jira ticket governance with staleness checks and prioritization rules",
+    "AI governance layer to prevent sensitive data leakage",
+  ]
+},
   {
     title: "Carbon Pipeline & Audit Suite 🐸",
     subtitle: "(TypeScript, Node.js)",
