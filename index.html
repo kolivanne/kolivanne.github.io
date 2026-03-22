@@ -56,173 +56,15 @@ Today, I help companies build resilient software by bridging code, tests, and pr
   <div class="text-center">
     <h2 class="display-7 fw-bold my-headline my-font" id="work">Work</h2>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">
-        Selected projects with a focus on reliability, testing, and system design.
-      </p>
+       <p class="lead mb-4">
+      Fear not, the <code>code</code> won’t bite! Dive in to explore full projects, experiments, and snippets from my GitHub.
+    </p>
     </div>
   </div>
 
   <div class="col-lg-8 mx-auto mt-5">
-
-    <!-- ===================== -->
-    <!-- CARBON PROJECT -->
-    <!-- ===================== -->
-    <div class="row g-3 mb-3">
-      <div class="col-12">
-        <div class="card h-100">
-          <div class="card-body d-flex flex-column">
-            
-            <h5 class="card-title">
-              Carbon Pipeline & Audit Suite 🐸 
-              <span class="text-muted small">(TypeScript, Node.js)</span>
-            </h5>
-
-            <!-- BADGES -->
-            <div class="d-flex flex-wrap gap-2 mb-2">
-              <span class="badge text-bg-dark">Node.js</span>
-              <span class="badge text-bg-dark">TypeScript</span>
-              <span class="badge text-bg-dark">Playwright</span>
-
-              <span class="badge text-bg-secondary annotation"
-                data-note="Focus: deterministic results in asynchronous processing">
-                Core Challenge
-              </span>
-
-              <span class="badge text-bg-secondary annotation"
-                data-note="Audit layer with repeatable runs (1000 iterations)">
-                Design Decision
-              </span>
-            </div>
-
-            <p class="card-text">
-              A validation engine for transforming energy activity data into CO₂ emissions.
-              Built to guarantee data integrity in asynchronous ingestion pipelines.
-            </p>
-
-            <!-- ENGINEERING NOTES -->
-            <div class="small text-muted mb-3">
-              <strong>Engineering Notes:</strong>
-              <ul class="mb-0">
-                <li>State-tracked async ingestion pipeline</li>
-                <li>Stress-tested with 100 concurrent executions</li>
-                <li>Deterministic audit layer for calculation validation</li>
-              </ul>
-            </div>
-
-            <div class="mt-auto">
-              <a class="btn btn-primary w-100" target="_blank" href="https://github.com/kolivanne/carbon-stream-validator">
-                Explore on GitHub →
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ===================== -->
-    <!-- OTHER PROJECTS -->
-    <!-- ===================== -->
-    <div class="row g-3">
-
-      <!-- SELENIUM -->
-      <div class="col-md-6">
-        <div class="card h-100">
-          <div class="card-body d-flex flex-column">
-
-            <h5 class="card-title">
-              Selenium NUnit 
-              <span class="text-muted small">(C#, UI Testing)</span>
-            </h5>
-
-            <!-- BADGES -->
-            <div class="d-flex flex-wrap gap-2 mb-2">
-              <span class="badge text-bg-dark">C#</span>
-              <span class="badge text-bg-dark">Selenium</span>
-              <span class="badge text-bg-dark">NUnit</span>
-
-              <span class="badge text-bg-info text-dark annotation"
-                data-note="Built as part of a hiring process with focus on maintainability">
-                Take-Home Task
-              </span>
-
-              <span class="badge text-bg-secondary annotation"
-                data-note="Page Object Pattern + reusable selectors to reduce maintenance cost">
-                Design Decision
-              </span>
-            </div>
-
-            <p class="card-text">
-              UI test strategy for Google Maps with focus on maintainability and reusable automation patterns.
-            </p>
-
-            <!-- ENGINEERING NOTES -->
-            <div class="small text-muted mb-3">
-              <strong>Engineering Notes:</strong>
-              <ul class="mb-0">
-                <li>Page Object Model for structured test design</li>
-                <li>Reusable components to reduce duplication</li>
-                <li>Focus on long-term maintainability over quick wins</li>
-              </ul>
-            </div>
-
-            <div class="mt-auto">
-              <a class="btn btn-primary w-100" target="_blank" href="https://github.com/kolivanne/nunit-selenium-google-maps">
-                Explore on GitHub →
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- PORTFOLIO -->
-      <div class="col-md-6">
-        <div class="card h-100">
-          <div class="card-body d-flex flex-column">
-
-            <h5 class="card-title">
-              Personal Portfolio Website 
-              <span class="text-muted small">(HTML, Bootstrap)</span>
-            </h5>
-
-            <!-- BADGES -->
-            <div class="d-flex flex-wrap gap-2 mb-2">
-              <span class="badge text-bg-dark">HTML</span>
-              <span class="badge text-bg-dark">Bootstrap</span>
-              <span class="badge text-bg-dark">JavaScript</span>
-
-              <span class="badge text-bg-secondary annotation"
-                data-note="Deliberately no framework to keep it lightweight and transparent">
-                Design Decision
-              </span>
-            </div>
-
-            <p class="card-text">
-              This portfolio, built from scratch with focus on clarity, dark mode, and structured presentation.
-            </p>
-
-            <!-- ENGINEERING NOTES -->
-            <div class="small text-muted mb-3">
-              <strong>Engineering Notes:</strong>
-              <ul class="mb-0">
-                <li>No build step → instant readability</li>
-                <li>Accessible and responsive layout</li>
-                <li>Focus on signal over visual noise</li>
-              </ul>
-            </div>
-
-            <div class="mt-auto">
-              <a class="btn btn-primary w-100" target="_blank" href="https://github.com/kolivanne/kolivanne.github.io">
-                Explore on GitHub →
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
+ <div class="row g-3" id="work-projects">
+    <!-- GENERATE PROJECT CARDS -->
   </div>
 
   <!-- CONTACT -->
@@ -279,5 +121,7 @@ Today, I help companies build resilient software by bridging code, tests, and pr
     <script defer src="resources/js/backToTop.js"></script>
     <script defer src="resources/js/updateCopyright.js"></script>
     <script defer src="resources/js/annotations.js"></script>
+    <script src="resources/js/projects.js" defer></script>
+    <script src="resources/js/generateProjects.js" defer></script>
   </body>
 </html>
