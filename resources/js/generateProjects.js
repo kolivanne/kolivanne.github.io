@@ -43,11 +43,13 @@ function renderProjects(containerId = "work-projects", projectsArray = projects)
             ${p.description}
           </p>
 
-          <button class="btn btn-sm btn-outline-secondary toggle-notes mt-2">
-            Show engineering details
-          </button>
+          <div class="mt-3 mb-3">
+  <button class="btn btn-sm btn-outline-secondary toggle-notes">
+    Show engineering details
+  </button>
 
-          ${notesHtml}
+  ${notesHtml}
+</div>
 
           <div class="mt-auto">
             <a class="btn btn-primary w-100" target="_blank" href="${p.github}">
