@@ -7,9 +7,7 @@ async function fetchLastCommit(repo) {
 
   try {
     const res = await fetch(`https://api.github.com/repos/${repo}/commits?per_page=1`, {
-      headers: {
-        "Accept": "application/vnd.github+json"
-      }
+      headers: { "Accept": "application/vnd.github+json" }
     });
 
     if (!res.ok) throw new Error("GitHub API error");
@@ -30,9 +28,7 @@ async function fetchLastCommit(repo) {
 function formatDate(dateString) {
   if (!dateString) return null;
 
-  const date = new Date(dateString);
-
-  return date.toLocaleDateString("en-US", {
+  return new Date(dateString).toLocaleDateString("en-US", {
     year: "numeric",
     month: "short"
   });
