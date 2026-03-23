@@ -15,9 +15,15 @@ function renderProjects(containerId = "work-projects", projectsArray = projects)
     }).join(" ");
 
     // Engineering notes HTML
-    const notesHtml = p.notes && p.notes.length
-      ? `<div class="small text-muted mb-3"><strong>Engineering Notes:</strong><ul class="mb-0">${p.notes.map(n => `<li>${n}</li>`).join("")}</ul></div>`
-      : "";
+    const notesHtml = (p.notes && p.notes.length) || p.repo
+  ? `<div class="small text-muted mb-3">
+      <strong>Engineering Notes:</strong>
+      <ul class="mb-0" id="notes-${p.repo || p.title}">
+        ${p.repo ? `<li id="meta-${p.repo}">Last updated: ...</li>` : ""}
+        ${(p.notes || []).map(n => `<li>${n}</li>`).join("")}
+      </ul>
+    </div>`
+  : "";
 
     col.innerHTML = `
       <div class="card h-100 d-flex flex-column">
@@ -35,6 +41,19 @@ function renderProjects(containerId = "work-projects", projectsArray = projects)
 
     container.appendChild(col);
   });
+
+  projectsArray.forEach(async (p) => {
+  if (!p.repo) return;
+
+  const metaEl = document.getElementById(`meta-${p.repo}`);
+  if (!metaEl) return;
+
+  const lastUpdate = await fetchLastCommit(p.repo);
+
+  metaEl.textContent = lastUpdate
+    ? `Last updated: ${lastUpdate}`
+    : "Last updated: n/a";
+});
 }
 
 document.addEventListener("DOMContentLoaded", () => {
