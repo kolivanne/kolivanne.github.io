@@ -1,0 +1,3 @@
+const featureFlags = {
+  cv: false 
+};
