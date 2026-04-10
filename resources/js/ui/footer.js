@@ -5,8 +5,8 @@ function getFooterHTML() {
     <footer class="footer" data-bs-theme="blue">
         <div class="container text-center border-top py-4 mb-4 small">
             <span class="text-muted copyright-year">
-                Copyright &copy; ${currentYear}.
-                Built with patience and discipline by <span class="my-font">Anne</span> 💜
+                &copy; ${currentYear} Anne.
+                Built with HTML, Bootstrap & vanilla JavaScript by <span class="my-font">me</span> 💜
                 <br>
             </span>
 

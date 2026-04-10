@@ -67,22 +67,5 @@ const projects = [
       "Reusable components to reduce duplication",
       "Focus on long-term maintainability over quick wins"
     ]
-  },
-  {
-    title: "Personal Portfolio Website",
-    description: "This portfolio, built from scratch with focus on clarity, dark mode, and structured presentation.",
-    github: "https://github.com/kolivanne/kolivanne.github.io",
-    repo: "kolivanne/kolivanne.github.io",
-    badges: [
-      { text: "HTML", color: "dark" },
-      { text: "Bootstrap", color: "dark" },
-      { text: "JavaScript", color: "dark" },
-      { text: "Design Decision", color: "secondary", note: "Deliberately no framework to keep it lightweight and transparent" }
-    ],
-    notes: [
-      "No build step → instant readability",
-      "Accessible and responsive layout",
-      "Focus on signal over visual noise"
-    ]
   }
 ];
