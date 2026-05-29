@@ -16,6 +16,40 @@ const projects = [
     ]
   },*/
   {
+  title: "AI Chat Backend Service",
+  description:
+    "A production-oriented FastAPI backend skeleton for an AI chatbot, designed with clean architecture, provider abstraction, and deployment readiness in mind.",
+  github: "https://github.com/kolivanne/chatbot-service",
+  repo: "kolivanne/chatbot-service",
+  badges: [
+    { text: "Python", color: "dark" },
+    { text: "FastAPI", color: "dark" },
+    { text: "Pydantic", color: "dark" },
+    {
+      text: "Take-Home Task",
+      color: "info",
+      note: "Built as part of a Python developer hiring process",
+    },
+    {
+      text: "Core Challenge",
+      color: "secondary",
+      note: "Designing a maintainable AI backend with provider abstraction",
+    },
+    {
+      text: "Design Decision",
+      color: "secondary",
+      note: "Strict separation of API, service, and provider layers for scalability and testability",
+    },
+  ],
+  notes: [
+    "FastAPI-based backend structure for AI-powered chat interactions",
+    "Provider abstraction supporting interchangeable LLM backends (Azure OpenAI / AWS Bedrock)",
+    "Layered architecture separating API routes, business logic, and infrastructure concerns",
+    "Pydantic request/response schemas for validation and maintainability",
+  ],
+  category: "AI Systems"
+},
+  {
     title: "Packaging Workflow Automation",
     description:
       "A Node.js-based CLI tool that transforms structured product data (CSV/Excel) into validated, design-ready outputs. It simulates a simple packaging workflow from data input to HTML/PDF preview generation.",
