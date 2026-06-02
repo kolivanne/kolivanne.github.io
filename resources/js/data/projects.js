@@ -47,7 +47,7 @@ const projects = [
     "Layered architecture separating API routes, business logic, and infrastructure concerns",
     "Pydantic request/response schemas for validation and maintainability",
   ],
-  category: "AI Systems"
+  category: "Featured Projects"
 },
   {
     title: "Packaging Workflow Automation",
@@ -75,7 +75,7 @@ const projects = [
       "CLI-driven workflow that runs validation before generating outputs",
       "Generates HTML previews per product with optional PDF export via Puppeteer",
     ],
-    category: "Workflow Automation Systems"
+    category: "Featured Projects"
   },
   {
     title: "OpsFlow: Atlassian Lifecycle & Governance Demo",
@@ -102,7 +102,7 @@ const projects = [
       "Cross-project Jira ticket governance with staleness checks and prioritization rules",
       "AI governance layer to prevent sensitive data leakage",
     ],
-    category: "Workflow Automation Systems"
+    category: "Featured Projects"
   },
   {
     title: "Carbon Pipeline & Audit Suite 🐸",
@@ -130,7 +130,7 @@ const projects = [
       "Stress-tested with 100 concurrent executions",
       "Deterministic audit layer for calculation validation",
     ],
-    category: "Workflow Automation Systems"
+    category: "Other Projects"
   },
   {
     title: "Selenium NUnit",
@@ -158,6 +158,6 @@ const projects = [
       "Reusable components to reduce duplication",
       "Focus on long-term maintainability over quick wins",
     ],
-    category: "Testing & Quality Engineering"
+    category: "Other Projects"
   },
 ];
